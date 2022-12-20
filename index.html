@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    
 
     <title>Sign-up</title>
 
@@ -23,16 +27,19 @@
 
         <main>
             <aside>
-                <h1>Odin</h1>
+                <h1>The<br>Odin<br>Project</h1>
             </aside>
             <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsam dolores nobis laudantium nulla tempore, qui sapiente in. Repellendus tempore, nisi iste inventore explicabo autem sit corporis odit excepturi ipsa.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="swith">Switch on/off</button>
+                <div class="intro">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsam dolores nobis laudantium nulla tempore, qui sapiente in. Repellendus tempore, nisi iste inventore explicabo autem sit corporis odit excepturi ipsa.</p>
+                    <p>Lorem ipsum dolor <strong>sit amet consectetur adipisicing elit.</strong></p>
+                </div>
                 
                 <form action="#">
 
+                    <h2 class="title">Let's do this!</h2>
                     <fieldset>
-                        <h2>Let's do this!</h2>
                         
                         <div class="field">
                             <label for="firstname">First name</label>
@@ -50,8 +57,8 @@
                         </div>
 
                         <div class="field">
-                            <label for="phone">First name</label>
-                            <input type="number" id="phone" required>
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" required>
                         </div>
 
                         <div class="field">
@@ -67,9 +74,9 @@
                     </fieldset>
 
                     <button type="submit">Create Account</button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
+                    <p class="info">Already have an account? <a href="#">Log in</a></p>
                 </form>
-                                
+
             </section>
         </main>
 

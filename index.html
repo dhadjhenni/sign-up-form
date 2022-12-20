@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="noJS" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sign-up</title>
+
+    <script>
+        const hasJS = function() {
+            const htmlTag = document.getElementsByTagName('html')[0];
+            const htmlClass = htmlTag.className.replace('noJS', 'hasJS');
+            htmlTag.className = htmlClass;
+        }();
+    </script>
+</head>
+<body>
+    <!-- START : content -->
+    <div id="content">
+
+        <main>
+            <aside>
+                <h1>Odin</h1>
+            </aside>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsam dolores nobis laudantium nulla tempore, qui sapiente in. Repellendus tempore, nisi iste inventore explicabo autem sit corporis odit excepturi ipsa.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                
+                <form action="#">
+
+                    <fieldset>
+                        <h2>Let's do this!</h2>
+                        
+                        <div class="field">
+                            <label for="firstname">First name</label>
+                            <input type="text" id="firstname" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="lastname">Last name</label>
+                            <input type="text" id="lastname" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">First name</label>
+                            <input type="number" id="phone" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" id="confirm_password" required>
+                        </div>
+
+                    </fieldset>
+
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </form>
+                                
+            </section>
+        </main>
+
+    </div>
+    <!-- END : content -->
+
+    <!-- START : scripts -->
+    <script>    
+
+    </script>
+</body>
+</html>

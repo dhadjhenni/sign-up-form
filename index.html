@@ -1,103 +1,108 @@
 <!DOCTYPE html>
 <html class="noJS dark-theme" lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    
+        <title>Sign-up</title>
 
-    <title>Sign-up</title>
+        <script>
+            const hasJS = (function () {
+                const htmlTag = document.getElementsByTagName('html')[0];
+                const htmlClass = htmlTag.className.replace('noJS', 'hasJS');
+                htmlTag.className = htmlClass;
+            })();
+        </script>
+    </head>
+    <body>
+        <!-- START : content -->
+        <div id="content">
+            <main>
+                <aside>
+                    <h1>The<br />Odin<br />Project</h1>
+                </aside>
+                <section>
+                    <div class="switch toggle-switch">
+                        <label>
+                            <input type="checkbox" />
+                            <span class="slider"></span>
+                        </label>
+                    </div>
 
-    <script>
-        const hasJS = function() {
-            const htmlTag = document.getElementsByTagName('html')[0];
-            const htmlClass = htmlTag.className.replace('noJS', 'hasJS');
-            htmlTag.className = htmlClass;
-        }();
-    </script>
-</head>
-<body>
-    <!-- START : content -->
-    <div id="content">
+                    <div class="intro">
+                        <h2>👋 Welcome !</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsam dolores nobis laudantium nulla tempore, qui sapiente in. <a href="#">Repellendus tempore</a>, nisi iste inventore explicabo autem sit corporis odit
+                            excepturi ipsa.
+                        </p>
+                        <p>Lorem ipsum dolor <strong>sit amet consectetur adipisicing elit.</strong></p>
+                    </div>
 
-        <main>
-            <aside>
-                <h1>The<br>Odin<br>Project</h1>
-            </aside>
-            <section>
-                <div class='switch toggle-switch'>
-                    <label>
-                        <input type='checkbox'>
-                        <span class='slider'></span>
-                    </label>
-                </div>
+                    <form action="#">
+                        <h2 class="title"><span>—</span> Let's do this!</h2>
+                        <fieldset>
+                            <div class="field">
+                                <label for="firstname">First name</label>
+                                <input type="text" id="firstname" required />
+                            </div>
 
+                            <div class="field">
+                                <label for="lastname">Last name</label>
+                                <input type="text" id="lastname" required />
+                            </div>
 
-                <div class="intro">
-                    <h2>👋 Welcome !</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsam dolores nobis laudantium nulla tempore, qui sapiente in. <a href="#">Repellendus tempore</a>, nisi iste inventore explicabo autem sit corporis odit excepturi ipsa.</p>
-                    <p>Lorem ipsum dolor <strong>sit amet consectetur adipisicing elit.</strong></p>
-                </div>
-                
-                <form action="#">
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required />
+                            </div>
 
-                    <h2 class="title"><span>—</span> Let's do this!</h2>
-                    <fieldset>
-                        
-                        <div class="field">
-                            <label for="firstname">First name</label>
-                            <input type="text" id="firstname" required>
-                        </div>
+                            <div class="field">
+                                <label for="phone">Phone number</label>
+                                <input type="tel" id="phone" pattern="[789][0-9]{9}" required />
+                            </div>
 
-                        <div class="field">
-                            <label for="lastname">Last name</label>
-                            <input type="text" id="lastname" required>
-                        </div>
+                            <div class="field">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" required />
+                            </div>
 
-                        <div class="field">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" required>
-                        </div>
+                            <div class="field">
+                                <label for="confirm_password">Confirm Password</label>
+                                <input type="password" id="confirm_password" required />
+                            </div>
+                        </fieldset>
 
-                        <div class="field">
-                            <label for="phone">Phone number</label>
-                            <input type="tel" id="phone" pattern="[789][0-9]{9}" required>
-                        </div>
+                        <button type="submit">Create Account</button>
+                        <p class="info">Already have an account? <a href="#">Log in</a></p>
+                    </form>
+                </section>
+            </main>
 
-                        <div class="field">
-                            <label for="password">Password</label>
-                            <input type="password" id="password" required>
-                        </div>
+            <footer>
+                <p>Copyright 2023 - <a href="http://www.dhh.me">dhh.me</a> / <a href="https://github.com/dhadjhenni">Github</a></p>
+            </footer>
+        </div>
+        <!-- END : content -->
 
-                        <div class="field">
-                            <label for="confirm_password">Confirm Password</label>
-                            <input type="password" id="confirm_password" required>
-                        </div>
+        <!-- START : scripts -->
+        <script>
+            const switcher = document.querySelector('.toggle-switch input');
+            const htmlTag = document.querySelector('html');
 
-                    </fieldset>
-
-                    <button type="submit">Create Account</button>
-                    <p class="info">Already have an account? <a href="#">Log in</a></p>
-                </form>
-
-            </section>
-        </main>
-
-        <footer>
-            <p>Copyright 2023 - <a href="http://www.dhh.me">dhh.me</a> / <a href="https://github.com/dhadjhenni">Github</a></p>
-        </footer>
-
-    </div>
-    <!-- END : content -->
-
-    <!-- START : scripts -->
-    <script>    
-        
-    </script>
-</body>
+            switcher.addEventListener('change', function () {
+                if (htmlTag.classList.contains('dark-theme')) {
+                    htmlTag.classList.remove('dark-theme');
+                    htmlTag.classList.add('light-theme');
+                } else {
+                    htmlTag.classList.add('dark-theme');
+                    htmlTag.classList.remove('light-theme');
+                }
+            });
+        </script>
+    </body>
 </html>

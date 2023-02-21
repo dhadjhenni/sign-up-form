@@ -39,11 +39,14 @@ abbr[title] {
     /* 2 */
 }
 
-b, strong {
+b,
+strong {
     font-weight: bolder;
 }
 
-code, kbd, samp {
+code,
+kbd,
+samp {
     font-family: monospace, monospace;
     /* 1 */
     font-size: 1em;
@@ -54,7 +57,8 @@ small {
     font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -71,7 +75,11 @@ img {
     border-style: none;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
     font-family: inherit;
     /* 1 */
     font-size: 100%;
@@ -82,26 +90,37 @@ button, input, optgroup, select, textarea {
     /* 2 */
 }
 
-button, input {
+button,
+input {
     /* 1 */
     overflow: visible;
 }
 
-button, select {
+button,
+select {
     /* 1 */
     text-transform: none;
 }
 
-button, [type="button"], [type="reset"], [type="submit"] {
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
     -webkit-appearance: button;
 }
 
-button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
     border-style: none;
     padding: 0;
 }
 
-button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
     outline: 1px dotted ButtonText;
 }
 
@@ -132,25 +151,27 @@ textarea {
     overflow: auto;
 }
 
-[type="checkbox"], [type="radio"] {
+[type='checkbox'],
+[type='radio'] {
     box-sizing: border-box;
     /* 1 */
     padding: 0;
     /* 2 */
 }
 
-[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
     height: auto;
 }
 
-[type="search"] {
+[type='search'] {
     -webkit-appearance: textfield;
     /* 1 */
     outline-offset: -2px;
     /* 2 */
 }
 
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
     -webkit-appearance: none;
 }
 
@@ -186,16 +207,22 @@ template {
     box-sizing: border-box;
 }
 
+::-moz-selection {
+    background: #ffbd38;
+}
+ma-selection::-moz-selection {
+    background: #ffbd38;
+}
 
 /*  =GENERIC
 ----------------------------------------------------------------------------- */
 
 html {
-    font-size:62.5%;
+    font-size: 62.5%;
 }
 
 body {
-    background:var(--main-color);
+    background: var(--main-color);
     color: #000;
     font-family: 'Nunito Sans', sans-serif;
     -webkit-overflow-scrolling: touch;
@@ -205,34 +232,32 @@ body {
 :root {
     --light: #8871e6;
     --dark: #1b1932;
-    --link: rgb(27, 129, 112);
-    --link-hover: rgb(24, 94, 82);
-    --power-color:#ffbd38;
+    --power-color: #ffbd38;
 }
 
 .dark-theme {
-    --main-color:#1b1932;
-    --sub-color:#2e2c54;
-    --text-color:#fff;
+    --main-color: #1b1932;
+    --sub-color: #2e2c54;
+    --text-color: #fff;
     --gray: #ccc;
-    --passive-color:#393760;
+    --passive-color: #393760;
 }
 
 .light-theme {
-    --main-color:#f5f5fd;
-    --sub-color:#fff;
-    --text-color:#2e2c54;
-    --gray:#666;
-    --passive-color:#f5f5fd;
+    --main-color: #f5f5fd;
+    --sub-color: #fff;
+    --text-color: #2e2c54;
+    --gray: #666;
+    --passive-color: #f5f5fd;
 }
 
-/*/#d9ddf3*/ 
-  
+/*/#d9ddf3*/
+
 .toggle-switch {
     position: relative;
     width: 50px;
 }
-  
+
 .toggle-switch label {
     position: absolute;
     width: 100%;
@@ -241,12 +266,12 @@ body {
     border-radius: 50px;
     cursor: pointer;
 }
-  
-.toggle-switch  input {
+
+.toggle-switch input {
     position: absolute;
     display: none;
 }
-  
+
 .toggle-switch .slider {
     position: absolute;
     width: 100%;
@@ -254,13 +279,13 @@ body {
     border-radius: 50px;
     transition: 0.3s;
 }
-  
-.toggle-switch  input:checked ~ .slider {
+
+.toggle-switch input:checked ~ .slider {
     background-color: var(--light);
 }
-  
+
 .toggle-switch .slider::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 5px;
     left: 6px;
@@ -271,38 +296,37 @@ body {
     background-color: var(--dark);
     transition: 0.3s;
 }
-  
+
 .toggle-switch input:checked ~ .slider::before {
     transform: translateX(20px);
     background-color: var(--dark);
     box-shadow: none;
 }
 
-
 /*  =MAIN
 ----------------------------------------------------------------------------- */
 
 main {
     width: 1440px;
-    margin:100px auto;
-    border-radius:20px;
+    margin: 100px auto;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow:0 0 20px rgba(0,0,0,0.1);
-    display:flex;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
     color: var(--text-color);
     height: 1024px;
-    transition:all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 aside {
     width: 536px;
-    padding:0 40px;
+    padding: 0 40px;
     position: relative;
     z-index: 0;
     text-align: center;
-    background: url('https://images.unsplash.com/photo-1560837616-fee1f3d8753a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80') center top no-repeat;
+    background: url('https://images.unsplash.com/photo-1560837616-fee1f3d8753a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80') center bottom no-repeat;
     background-size: 150%;
-    transition:all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 aside:hover {
@@ -311,40 +335,40 @@ aside:hover {
 
 aside h1 {
     font-weight: 700;
-    line-height:1;
-    font-size:5rem;
+    line-height: 1;
+    font-size: 5rem;
     text-align: left;
     position: absolute;
-    left:40px;
+    left: 40px;
     color: #fff;
-    bottom:40px;
+    bottom: 40px;
     font-family: 'Nunito Sans', sans-serif;
 }
 
 section {
     background: var(--sub-color);
-    border-radius:20px;
-    padding:40px;
+    border-radius: 20px;
+    padding: 40px;
     margin-left: -40px;
-    z-index:2;
+    z-index: 2;
     position: relative;
     width: 80%;
-    box-shadow:0 0 20px rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 section .switch {
     position: absolute;
     right: 40px;
-    top:40px;
+    top: 40px;
 }
 
 .intro {
-    padding:0 0 40px 0;
+    padding: 0 0 40px 0;
 }
 
 .intro p {
-    font-size:2rem;
-    margin:0 0 20px;
+    font-size: 2rem;
+    margin: 0 0 20px;
     font-weight: 300;
 }
 
@@ -358,28 +382,26 @@ section .switch {
 
 .intro h2 {
     font-weight: bold;
-    font-size:4rem;
-    margin:0 0 30px;
-    padding:0 0 10px;
+    font-size: 4rem;
+    margin: 0 0 30px;
+    padding: 0 0 10px;
     border-bottom: 3px solid var(--passive-color);
 }
 
 form > fieldset {
-    border:0;
+    border: 0;
     background: var(--passive-color);
-    border-radius:20px;
-    padding:30px;
-    margin:0 0 40px;
-    display:flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: flex-start;
-    width: auto;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
 }
 
 form .title {
-    margin:0 0 20px;
-    font-size:2.6rem;
+    margin: 0 0 20px;
+    font-size: 2.6rem;
 }
 
 form .title span {
@@ -389,14 +411,14 @@ form .title span {
 form button {
     background: var(--power-color);
     color: #242247;
-    border:0;
+    border: 0;
     font-weight: 700;
-    font-size:1.8rem;
-    border-radius:5px;
-    padding:14px 18px;
-    margin:0 0 20px;
-    cursor:pointer;
-    transition:all 0.3s ease;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    padding: 14px 18px;
+    margin: 0 0 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 form button:hover {
@@ -404,9 +426,8 @@ form button:hover {
     color: #fff;
 }
 
-
 form .info {
-    font-size:1.6rem;
+    font-size: 1.6rem;
 }
 
 form .info a {
@@ -420,45 +441,47 @@ form .info a:hover {
 }
 
 form .field {
-    padding:0 0 20px;
-    width:40%;
+    padding: 0 0 20px;
 }
-
+/*
 form .field:nth-child(even) {
-    margin-left:40px;
-}
+    margin-left: 40px;
+}*/
 
 form .field label {
     display: block;
-    font-size:1.6rem;
-    margin:0 0 5px;
+    font-size: 1.6rem;
+    margin: 0 0 5px;
     font-weight: bold;
-
 }
 
 form .field input {
-    border-radius:10px;
-    height:44px;
-    width:300px;
+    border-radius: 10px;
+    height: 44px;
+    width: 300px;
     background: rgba(255, 255, 255, 0.1);
-    border:0;
+    border: 0;
     font-size: 1.6rem;
-    padding:0 15px;
+    padding: 0 15px;
     font-weight: normal;
-    color:#fff;
-    border:2px solid transparent;
-    transition:all 0.3s ease;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.light-theme form .field input {
+    color: var(--text-color);
+    background: rgba(136, 113, 230, 0.1);
 }
 
 form .field input:focus {
-    outline:none;
-    border-color: var(--power-color);   
+    outline: none;
+    border-color: var(--power-color);
 }
 
 form .field input:error {
-    border-color:red;
+    border-color: red;
 }
-
 
 footer {
     text-align: center;
@@ -466,7 +489,7 @@ footer {
 
 footer p {
     color: var(--gray);
-    font-size:1.4rem;
+    font-size: 1.4rem;
 }
 
 footer p a {
@@ -475,4 +498,96 @@ footer p a {
 
 footer p a:hover {
     text-decoration: none;
+}
+
+/*  =MEDIAQUERIES
+----------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1480px) {
+    #content {
+        padding: 40px;
+    }
+
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    aside {
+        background-size: 300%;
+    }
+
+    aside:hover {
+        background-size: 310%;
+    }
+
+    aside h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        display: block;
+        margin-top: 0;
+        height: auto;
+    }
+
+    aside {
+        width: 100%;
+        height: 300px;
+        background-position: center center;
+        background-size: 150%;
+    }
+
+    aside:hover {
+        background-size: 165%;
+    }
+
+    section {
+        width: 100%;
+        margin: -40px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    form > fieldset {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    form .field,
+    form .field:nth-child(2n) {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    form .field input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #content {
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    main {
+        margin: 0 0 20px;
+    }
+
+    .intro h2 {
+        font-size: 2.4rem;
+    }
+
+    section .switch {
+        top: 22px;
+        right: 20px;
+    }
 }
